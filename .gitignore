@@ -43,10 +43,10 @@ TestResults/
    
 
 # 添加
-.vsidx
-.db
-.json
-.ipch
-.sln
-.vcxproj
-.fiters
+*.vsidx
+*.db
+*.json
+*.ipch
+*.sln
+*.vcxproj
+*.filters
