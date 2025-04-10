@@ -1,6 +1,5 @@
-*
-!.cpp
-!.c
-!.h
-!.gitignore
-!*/
+*.sln
+*.vcxproj
+*.filters
+*.user
+.*
