@@ -1,5 +1,52 @@
-*.sln
-*.vcxproj
-*.filters
+# Visual Studio 配置文件
+*.suo
 *.user
-.*
+*.userosscache
+*.sln.docstates
+
+# 构建输出目录
+Debug/
+Release/
+x64/
+Win32/
+
+# NuGet 包目录
+packages/
+
+# ReSharper 相关
+_ReSharper*/
+*.resharper
+
+# 测试结果目录
+TestResults/
+
+# 二进制文件和可执行文件
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+
+# 其他临时文件和日志文件
+*.log
+*.tmp
+*.cache
+*.lock
+
+# 代码分析和覆盖率文件
+*.coverage
+*.coveragexml
+*.trx
+
+# 配置文件备份
+*.bak
+   
+
+# 添加
+.vsidx
+.db
+.json
+.ipch
+.sln
+.vcxproj
+.fiters
