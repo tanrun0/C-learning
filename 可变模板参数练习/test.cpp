@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
-#include<string>
+#include"string.h"
 using namespace std;
 
 
@@ -62,21 +62,31 @@ using namespace std;
 //}
 
 
-template <class T>
-const T& GetArg(const T& x) {
-    cout << x << " ";  // 打印参数
-    return x;          // 返回原参数（保证类型不变）
-}
+//template <class T>
+//const T& GetArg(const T& x) {
+//    cout << x << " ";  // 打印参数
+//    return x;          // 返回原参数（保证类型不变）
+//}
+//
+//template <class ...Args>
+//void Arguments(Args... args) {}  // 空函数，仅用于接收展开后的参数包
+//
+//template <class ...Args>
+//void Print(Args... args) {
+//    Arguments(GetArg(args)...);  // 关键：展开参数包并调用 GetArg 处理每个参数
+//}
+//int main()
+//{
+//    Print(1, 2.2, 3.3, "hello world");
+//    return 0;
+//}
 
-template <class ...Args>
-void Arguments(Args... args) {}  // 空函数，仅用于接收展开后的参数包
 
-template <class ...Args>
-void Print(Args... args) {
-    Arguments(GetArg(args)...);  // 关键：展开参数包并调用 GetArg 处理每个参数
-}
 int main()
 {
-    Print(1, 2.2, 3.3, "hello world");
-    return 0;
+	tr::string s1 = "hello world";
+	tr::string s3 = tr::string("tr");
+	s1 = move(s1);
+	return 0;
 }
+
